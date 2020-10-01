@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-2.11</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /* 1. ans=2
+            2. ans = 1 then 2
+            3. ans = null
+            4. ans = 1 then undefined
+            5. ans = 3
+            6. ans =  if (age >= 14 && age <=90)
+            7. ans  = if(!(age >= 14 && age <= 90))
+                ans  = if (age < 14 || age > 90)
+            8.  ans = 
+                    if (-1 || 0) alert( 'first' ); ans = -1
+                    if (-1 && 0) alert( 'second' ); ans = wont run
+                    if (null || -1 && 1) alert( 'third' ); ans  = 1
+        */
+        let loginID = prompt("Who's there?");
+
+        if (loginID == "Admin"){
+            let password = prompt("Paswword pls!");
+            if (password == "TheMaster"){
+                alert("Welcome");
+            }else if((password == "") || password==null){
+                 alert("Canceled");
+            }else {
+                alert("Wrong password");
+            }
+
+        }else if (loginID == ""  || loginID == null){
+            alert("Canceled");
+        }else {
+            alert('I dont know you');
+        }
+
+        
+        
+
+       
+           
+        
+
+    </script>
+
+</body>
+</html>

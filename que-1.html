@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION</title>
+</head>
+<body>
+    <script type="text/javascript">
+    let main = function(a,b, addNums, subNums){
+        let nOne = prompt("Enter first number");
+        let nTwo = prompt("Enter second number");
+
+        let addNum = addNums(a, nOne);
+        let subNum = subNums (b, nTwo);
+
+        console.log(addNum);
+        console.log(subNum);
+
+        let div = addNum/subNum;
+        return div;
+    }
+   
+
+    function numOne(a , b){
+        return a + b;
+
+    }
+    
+    
+
+
+    function numTwo(a ,b ) {
+        
+        return a-b;
+        
+
+    }
+    let result = main(10,5 , numOne , numTwo);
+    alert(result); 
+    
+    
+    
+    </script>
+</body>
+</html>

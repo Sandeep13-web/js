@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-4.1</title>
+</head>
+<body>
+    <script type="text/javascript">
+            //         let user = {
+            // name: "John",
+            // surname: "Smith"
+            // };
+            // user.age = 25; // add one more
+
+            // // non-integer properties are listed in the creation order
+            // for (let prop in user) {
+            // alert( user[prop] ); // name, surname, age
+            // }
+
+            /* 1 .        
+            let user= {};
+            user.name = "john"; // user: "John", 
+            user.surname = "Smith"; // surname : "Smith",
+            user .name = "Pete";
+            delete user.name; */
+
+            /* 2 .
+            function isEmpty(obj){
+                for(let key in obj){
+                    return false;
+                }return true;
+            }*/
+
+            /*3.
+            let salaries = {
+                John: 100,
+                Ann: 160,
+                Pete: 130
+            }
+           
+            let sum = 0;
+            for(let key in salaries){
+                sum += salaries[key];
+            }
+            alert(sum);*/
+
+            
+
+            function multiplyNumeric(obj){
+                for(let key in obj){
+                    if(typeof obj[key] == "number"){
+                        obj[key] *=2;
+                    }
+                }
+
+            }
+
+
+
+
+            let games = {
+                game_name: "CS-GO",
+                game_emulator: "Steam",
+                game_prizepool: "$123456789",
+                game_owner: "Mirajane",
+
+            };
+
+            let solarsystem = {
+                total_planets = 8, 
+                system_power: "Sun",
+                suitable_planet: "Earth",
+                hottest_planet: "Mars",
+            };
+
+            let Naruto = {
+                originated: "Japan",
+                Creator: "Masashi Kishimoto",
+                main_character : "Naruto",
+                total_earnings: "$987654321"
+            };
+
+            let sports = {
+                sports_name : "Soccer",
+                total_players : 11,
+                total_clubs : 456,
+                championship :"UEFA championship"
+            };
+
+
+            let laptop = {
+                laptop_name : "Acer",
+                laptop_price : "$798",
+                total_RAM: "8GB",
+                Processor : "i5 8th gen",
+                GPU : "RTX 3090"
+            }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
